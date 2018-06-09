@@ -1,3 +1,7 @@
+import datetime
+
+from BotHandler import BotHandler
+
 greet_bot = BotHandler("562742113:AAFzvPJQMsmrYe2K0tdQvViFSqV3R3T1Krw")
 greetings = ('hello', 'hi', 'greetings', 'sup')
 now = datetime.datetime.now()
