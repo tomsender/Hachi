@@ -29,7 +29,6 @@ def main():
         last_chat_name = last_update['message']['chat']['first_name']
 
         if last_chat_text.lower() in status:
-            hachi.state
             greet_bot.send_message(last_chat_id, hachi.get_status())
             today += 1
 
