@@ -1,0 +1,1 @@
+web: python hachi_bot.py
