@@ -1,9 +1,11 @@
 import datetime
+import sys
 
 from BotHandler import BotHandler
 from HachiStatus import HachiStatus
 
-greet_bot = BotHandler("562742113:AAFzvPJQMsmrYe2K0tdQvViFSqV3R3T1Krw")
+token = sys.argv[1]
+greet_bot = BotHandler(token)
 greetings = ('hello', 'hi', 'greetings', 'sup')
 status = 'status', 'hachi'
 ateKeys = 'ate'
