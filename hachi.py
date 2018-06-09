@@ -1,7 +1,6 @@
 import datetime
 
 from BotHandler import BotHandler
-from HachiStatuses import StarvingState, HyperactiveState, SatisfiedState
 from HachiStatus import HachiStatus
 hachi = HachiStatus()
 
