@@ -7,9 +7,9 @@ hachi = HachiStatus()
 
 greet_bot = BotHandler("562742113:AAFzvPJQMsmrYe2K0tdQvViFSqV3R3T1Krw")
 greetings = ('hello', 'hi', 'greetings', 'sup')
-status = ('status', 'hachi')
-ateKeys = ('ate')
-walkedKeys = ('walked, kaki')
+status = 'status', 'hachi'
+ateKeys = 'ate'
+walkedKeys = 'walked, kaki'
 now = datetime.datetime.now()
 
 

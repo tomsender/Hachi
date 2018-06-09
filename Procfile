@@ -1,1 +1,1 @@
-web: python hachi.py
+worker: python hachi.py
