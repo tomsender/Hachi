@@ -2,8 +2,6 @@ import datetime
 
 from BotHandler import BotHandler
 from HachiStatus import HachiStatus
-hachi = HachiStatus()
-
 
 greet_bot = BotHandler("562742113:AAFzvPJQMsmrYe2K0tdQvViFSqV3R3T1Krw")
 greetings = ('hello', 'hi', 'greetings', 'sup')
@@ -11,6 +9,7 @@ status = 'status', 'hachi'
 ateKeys = 'ate'
 walkedKeys = 'walked, kaki'
 now = datetime.datetime.now()
+hachi = HachiStatus()
 
 
 def main():
@@ -30,18 +29,14 @@ def main():
 
         if last_chat_text.lower() in status:
             greet_bot.send_message(last_chat_id, hachi.get_status())
-            today += 1
 
         if last_chat_text.lower() in ateKeys:
             HachiStatus.on_event(hachi, ateKeys[0])
             greet_bot.send_message(last_chat_id, hachi.get_status())
-            today += 1
 
         if last_chat_text.lower() in walkedKeys:
             HachiStatus.on_event(hachi, walkedKeys[0])
             greet_bot.send_message(last_chat_id, hachi.get_status())
-            today += 1
-
 
         if last_chat_text.lower() in greetings and today == now.day and 6 <= hour < 12:
             greet_bot.send_message(last_chat_id, 'Good Morning  {}'.format(last_chat_name))
