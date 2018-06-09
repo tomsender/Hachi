@@ -1,1 +1,1 @@
-web: python hachi_bot.py
+web: python hachi.py
